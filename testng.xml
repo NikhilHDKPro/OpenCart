@@ -7,15 +7,9 @@
   <test thread-count="5" name="Test1">
     <parameter name="browser" value="firefox"></parameter>
     <classes>
-      <class name="testsOn_OC.TC_LoginFunctionality"/>
+      <class name="testsOn_OC.TCase1"/>
     
     </classes>
   </test> <!-- Test -->
-  <test thread-count="5" name="Test2">
-    <parameter name="browser" value="firefox"></parameter>
-    <classes>
-      
-      <class name="testsOn_OC.TC_RegistrationFunctionality"/>
-    </classes>
-  </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,12 +103,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testsOn_OC.TC_LoginFunctionality" class="method navigator-link" hash-for-method="LoginToOC">LoginToOC</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testsOn_OC.TCase1" class="method navigator-link" hash-for-method="LoginToOC">LoginToOC</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testsOn_OC.TC_RegistrationFunctionality" class="method navigator-link" hash-for-method="Registration">Registration</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testsOn_OC.TCase1" class="method navigator-link" hash-for-method="Registration">Registration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -126,7 +126,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testsOn_OC.TC_LoginFunctionality</span>
+              <span class="class-name">testsOn_OC.TCase1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -136,14 +136,6 @@
                   <span class="method-name">LoginToOC</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testsOn_OC.TC_RegistrationFunctionality</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="Registration">
@@ -169,15 +161,9 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testsOn_OC.TC_LoginFunctionality&quot;/&gt;
+      &lt;class name=&quot;testsOn_OC.TCase1&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test2&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testsOn_OC.TC_RegistrationFunctionality&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test2 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,9 +176,6 @@
             <ul>
               <li>
                 <span class="test-name">Test1 (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Test2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -220,18 +203,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginToOC')
-data.setCell(0, 2, 'testsOn_OC.TC_LoginFunctionality')
-data.setCell(0, 3, 2017);
+data.setCell(0, 1, 'Registration')
+data.setCell(0, 2, 'testsOn_OC.TCase1')
+data.setCell(0, 3, 2902);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Registration')
-data.setCell(1, 2, 'testsOn_OC.TC_RegistrationFunctionality')
-data.setCell(1, 3, 1742);
+data.setCell(1, 1, 'LoginToOC')
+data.setCell(1, 2, 'testsOn_OC.TCase1')
+data.setCell(1, 3, 1889);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -257,49 +240,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testsOn_OC.TC_LoginFunctionality</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testsOn_OC.TCase1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">BeforeTestMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">SetupBrowser(firefox, public void testsOn_OC.TC_LoginFunctionality.LoginToOC())</span>
-                <span class="method-start">254 ms</span>
+                <span class="method-name">SetupBrowser(firefox, public void testsOn_OC.TCase1.LoginToOC())</span>
+                <span class="method-start">231 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginToOC</span>
-                <span class="method-start">6899 ms</span>
+                <span class="method-start">6360 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">AfterMethodMethod([TestResult name=LoginToOC status=SUCCESS method=TC_LoginFunctionality.LoginToOC()[pri:0, instance:t...)</span>
-                <span class="method-start">8919 ms</span>
+                <span class="method-name">AfterMethodMethod([TestResult name=LoginToOC status=SUCCESS method=TCase1.LoginToOC()[pri:0, instance:testsOn_OC.TCase...)</span>
+                <span class="method-start">8251 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">AfterTestMethod</span>
-                <span class="method-start">8927 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testsOn_OC.TC_RegistrationFunctionality</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">BeforeTestMethod</span>
-                <span class="method-start">9214 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">SetupBrowser(firefox, public void testsOn_OC.TC_RegistrationFunctionality.Registration())</span>
-                <span class="method-start">9216 ms</span>
+                <span class="method-name">SetupBrowser(firefox, public void testsOn_OC.TCase1.Registration())</span>
+                <span class="method-start">9006 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Registration</span>
-                <span class="method-start">14431 ms</span>
+                <span class="method-start">15084 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">AfterMethodMethod([TestResult name=Registration status=SUCCESS method=TC_RegistrationFunctionality.Registration()[pri:...)</span>
-                <span class="method-start">16174 ms</span>
+                <span class="method-name">AfterMethodMethod([TestResult name=Registration status=SUCCESS method=TCase1.Registration()[pri:0, instance:testsOn_OC...)</span>
+                <span class="method-start">17988 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">AfterTestMethod</span>
-                <span class="method-start">16175 ms</span>
+                <span class="method-start">18745 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

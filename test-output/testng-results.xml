@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-05T22:56:28 IST" name="Suite" finished-at="2023-10-05T22:56:44 IST" duration-ms="16231">
+  <suite started-at="2023-10-05T23:04:17 IST" name="Suite" finished-at="2023-10-05T23:04:36 IST" duration-ms="18951">
     <groups>
     </groups>
-    <test started-at="2023-10-05T22:56:28 IST" name="Test1" finished-at="2023-10-05T22:56:37 IST" duration-ms="9204">
-      <class name="testsOn_OC.TC_LoginFunctionality">
-        <test-method is-config="true" signature="BeforeTestMethod()[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d]" started-at="2023-10-05T22:56:28 IST" name="BeforeTestMethod" finished-at="2023-10-05T22:56:28 IST" duration-ms="239" status="PASS">
+    <test started-at="2023-10-05T23:04:17 IST" name="Test1" finished-at="2023-10-05T23:04:36 IST" duration-ms="18951">
+      <class name="testsOn_OC.TCase1">
+        <test-method is-config="true" signature="BeforeTestMethod()[pri:0, instance:testsOn_OC.TCase1@5aa9e4eb]" started-at="2023-10-05T23:04:17 IST" name="BeforeTestMethod" finished-at="2023-10-05T23:04:17 IST" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeTestMethod -->
-        <test-method is-config="true" signature="SetupBrowser(java.lang.String,java.lang.reflect.Method)[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d]" started-at="2023-10-05T22:56:28 IST" name="SetupBrowser" finished-at="2023-10-05T22:56:35 IST" duration-ms="6644" status="PASS">
+        <test-method is-config="true" signature="SetupBrowser(java.lang.String,java.lang.reflect.Method)[pri:0, instance:testsOn_OC.TCase1@5aa9e4eb]" started-at="2023-10-05T23:04:17 IST" name="SetupBrowser" finished-at="2023-10-05T23:04:23 IST" duration-ms="6129" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -20,41 +20,29 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void testsOn_OC.TC_LoginFunctionality.LoginToOC()]]>
+                <![CDATA[public void testsOn_OC.TCase1.LoginToOC()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupBrowser -->
-        <test-method signature="LoginToOC()[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d]" started-at="2023-10-05T22:56:35 IST" name="LoginToOC" finished-at="2023-10-05T22:56:37 IST" duration-ms="2017" status="PASS">
+        <test-method signature="LoginToOC()[pri:0, instance:testsOn_OC.TCase1@5aa9e4eb]" started-at="2023-10-05T23:04:23 IST" name="LoginToOC" finished-at="2023-10-05T23:04:25 IST" duration-ms="1889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToOC -->
-        <test-method is-config="true" signature="AfterMethodMethod(org.testng.ITestResult)[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d]" started-at="2023-10-05T22:56:37 IST" name="AfterMethodMethod" finished-at="2023-10-05T22:56:37 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="AfterMethodMethod(org.testng.ITestResult)[pri:0, instance:testsOn_OC.TCase1@5aa9e4eb]" started-at="2023-10-05T23:04:25 IST" name="AfterMethodMethod" finished-at="2023-10-05T23:04:26 IST" duration-ms="754" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginToOC status=SUCCESS method=TC_LoginFunctionality.LoginToOC()[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d] output={null}]]]>
+                <![CDATA[[TestResult name=LoginToOC status=SUCCESS method=TCase1.LoginToOC()[pri:0, instance:testsOn_OC.TCase1@5aa9e4eb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethodMethod -->
-        <test-method is-config="true" signature="AfterTestMethod()[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d]" started-at="2023-10-05T22:56:37 IST" name="AfterTestMethod" finished-at="2023-10-05T22:56:37 IST" duration-ms="270" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterTestMethod -->
-      </class> <!-- testsOn_OC.TC_LoginFunctionality -->
-    </test> <!-- Test1 -->
-    <test started-at="2023-10-05T22:56:37 IST" name="Test2" finished-at="2023-10-05T22:56:44 IST" duration-ms="7012">
-      <class name="testsOn_OC.TC_RegistrationFunctionality">
-        <test-method is-config="true" signature="BeforeTestMethod()[pri:0, instance:testsOn_OC.TC_RegistrationFunctionality@b2c9a9c]" started-at="2023-10-05T22:56:37 IST" name="BeforeTestMethod" finished-at="2023-10-05T22:56:37 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeTestMethod -->
-        <test-method is-config="true" signature="SetupBrowser(java.lang.String,java.lang.reflect.Method)[pri:0, instance:testsOn_OC.TC_RegistrationFunctionality@b2c9a9c]" started-at="2023-10-05T22:56:37 IST" name="SetupBrowser" finished-at="2023-10-05T22:56:42 IST" duration-ms="5215" status="PASS">
+        <test-method is-config="true" signature="SetupBrowser(java.lang.String,java.lang.reflect.Method)[pri:0, instance:testsOn_OC.TCase1@5aa9e4eb]" started-at="2023-10-05T23:04:26 IST" name="SetupBrowser" finished-at="2023-10-05T23:04:32 IST" duration-ms="6078" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,33 +51,33 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void testsOn_OC.TC_RegistrationFunctionality.Registration()]]>
+                <![CDATA[public void testsOn_OC.TCase1.Registration()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupBrowser -->
-        <test-method signature="Registration()[pri:0, instance:testsOn_OC.TC_RegistrationFunctionality@b2c9a9c]" started-at="2023-10-05T22:56:42 IST" name="Registration" finished-at="2023-10-05T22:56:44 IST" duration-ms="1742" status="PASS">
+        <test-method signature="Registration()[pri:0, instance:testsOn_OC.TCase1@5aa9e4eb]" started-at="2023-10-05T23:04:32 IST" name="Registration" finished-at="2023-10-05T23:04:35 IST" duration-ms="2902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Registration -->
-        <test-method is-config="true" signature="AfterMethodMethod(org.testng.ITestResult)[pri:0, instance:testsOn_OC.TC_RegistrationFunctionality@b2c9a9c]" started-at="2023-10-05T22:56:44 IST" name="AfterMethodMethod" finished-at="2023-10-05T22:56:44 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AfterMethodMethod(org.testng.ITestResult)[pri:0, instance:testsOn_OC.TCase1@5aa9e4eb]" started-at="2023-10-05T23:04:35 IST" name="AfterMethodMethod" finished-at="2023-10-05T23:04:35 IST" duration-ms="756" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Registration status=SUCCESS method=TC_RegistrationFunctionality.Registration()[pri:0, instance:testsOn_OC.TC_RegistrationFunctionality@b2c9a9c] output={null}]]]>
+                <![CDATA[[TestResult name=Registration status=SUCCESS method=TCase1.Registration()[pri:0, instance:testsOn_OC.TCase1@5aa9e4eb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethodMethod -->
-        <test-method is-config="true" signature="AfterTestMethod()[pri:0, instance:testsOn_OC.TC_RegistrationFunctionality@b2c9a9c]" started-at="2023-10-05T22:56:44 IST" name="AfterTestMethod" finished-at="2023-10-05T22:56:44 IST" duration-ms="49" status="PASS">
+        <test-method is-config="true" signature="AfterTestMethod()[pri:0, instance:testsOn_OC.TCase1@5aa9e4eb]" started-at="2023-10-05T23:04:35 IST" name="AfterTestMethod" finished-at="2023-10-05T23:04:36 IST" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterTestMethod -->
-      </class> <!-- testsOn_OC.TC_RegistrationFunctionality -->
-    </test> <!-- Test2 -->
+      </class> <!-- testsOn_OC.TCase1 -->
+    </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>
