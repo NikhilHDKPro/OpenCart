@@ -3,7 +3,6 @@ package ocBase;
 import java.io.File;
 import java.lang.reflect.Method;
 import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -21,7 +20,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import ocUtilities.Constants;
 
 public class Base {
-
 	public static WebDriver driver;
 	public ExtentSparkReporter sparkReporter;
 	public ExtentReports extent;
@@ -42,19 +40,15 @@ public class Base {
 
 	@BeforeMethod
 	@Parameters("browser")
-	public void BeforeMethodMethod(String browser, Method testMethod) {
-
+	public void SetupBrowser(String browser, Method testMethod) {
 		logger = extent.createTest(testMethod.getName());
-		
 		setupDriver(browser);
-		driver.manage().window().maximize();
 		driver.get(Constants.url);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
 	@AfterMethod
 	public void AfterMethodMethod(ITestResult result) {
-
 		if (result.getStatus() == ITestResult.FAILURE) {
 			logger.log(Status.FAIL,
 					MarkupHelper.createLabel(result.getName() + " - Tast Case Failed", ExtentColor.RED));
@@ -67,13 +61,13 @@ public class Base {
 			logger.log(Status.PASS,
 					MarkupHelper.createLabel(result.getName() + " - Test Case Passed", ExtentColor.GREEN));
 		}
-		driver.quit();
-
+		if (driver != null) {
+			driver.quit();
+		}
 	}
 
 	@AfterTest
 	public void AfterTestMethod() {
-
 		extent.flush();
 	}
 
@@ -88,7 +82,5 @@ public class Base {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}
-
 	}
-
 }

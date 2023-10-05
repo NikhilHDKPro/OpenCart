@@ -13,7 +13,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.ITestAnnotation;
 
-import ocBase.Base;
+import ocBase.*;
 
 public class SuiteListener implements ITestListener, IAnnotationTransformer{
 
@@ -25,7 +25,7 @@ public class SuiteListener implements ITestListener, IAnnotationTransformer{
 		try {
 			FileUtils.copyFile(f, new File(filename+".png"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 	  }

@@ -8,8 +8,14 @@ public class HomePageEvents {
 ElementFetch ef=new ElementFetch();	
 	public void GotoLoginPage() {
 		
-		ef.getWebElement("XPATH", OC_HomePageElements.HP_MyAccountButton).click();
-		ef.getWebElement("XPATH", OC_HomePageElements.HP_LogInButton).click();
+		ef.getWebElement("xpath", OC_HomePageElements.HP_MyAccountButton).click();
+		ef.getWebElement("xpath", OC_HomePageElements.HP_LogInButton).click();
+		
+	}
+	public void GoToRegistrationPage() {
+		
+		ef.getWebElement("xpath", OC_HomePageElements.HP_MyAccountButton).click();
+		ef.getWebElement("xpath", OC_HomePageElements.HP_RegistrationButton).click();
 	}
 
 }

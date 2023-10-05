@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-05T18:36:25 IST" name="Suite" finished-at="2023-10-05T18:36:40 IST" duration-ms="15077">
+  <suite started-at="2023-10-05T22:56:28 IST" name="Suite" finished-at="2023-10-05T22:56:44 IST" duration-ms="16231">
     <groups>
     </groups>
-    <test started-at="2023-10-05T18:36:25 IST" name="Test" finished-at="2023-10-05T18:36:40 IST" duration-ms="15077">
+    <test started-at="2023-10-05T22:56:28 IST" name="Test1" finished-at="2023-10-05T22:56:37 IST" duration-ms="9204">
       <class name="testsOn_OC.TC_LoginFunctionality">
-        <test-method is-config="true" signature="BeforeTestMethod()[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d]" started-at="2023-10-05T18:36:25 IST" name="BeforeTestMethod" finished-at="2023-10-05T18:36:26 IST" duration-ms="425" status="PASS">
+        <test-method is-config="true" signature="BeforeTestMethod()[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d]" started-at="2023-10-05T22:56:28 IST" name="BeforeTestMethod" finished-at="2023-10-05T22:56:28 IST" duration-ms="239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeTestMethod -->
-        <test-method is-config="true" signature="BeforeMethodMethod(java.lang.String,java.lang.reflect.Method)[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d]" started-at="2023-10-05T18:36:26 IST" name="BeforeMethodMethod" finished-at="2023-10-05T18:36:36 IST" duration-ms="10166" status="PASS">
+        <test-method is-config="true" signature="SetupBrowser(java.lang.String,java.lang.reflect.Method)[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d]" started-at="2023-10-05T22:56:28 IST" name="SetupBrowser" finished-at="2023-10-05T22:56:35 IST" duration-ms="6644" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -20,33 +20,76 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void testsOn_OC.TC_LoginFunctionality.MethodA()]]>
+                <![CDATA[public void testsOn_OC.TC_LoginFunctionality.LoginToOC()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeMethodMethod -->
-        <test-method signature="MethodA()[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d]" started-at="2023-10-05T18:36:36 IST" name="MethodA" finished-at="2023-10-05T18:36:38 IST" duration-ms="2205" status="PASS">
+        </test-method> <!-- SetupBrowser -->
+        <test-method signature="LoginToOC()[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d]" started-at="2023-10-05T22:56:35 IST" name="LoginToOC" finished-at="2023-10-05T22:56:37 IST" duration-ms="2017" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MethodA -->
-        <test-method is-config="true" signature="AfterMethodMethod(org.testng.ITestResult)[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d]" started-at="2023-10-05T18:36:38 IST" name="AfterMethodMethod" finished-at="2023-10-05T18:36:40 IST" duration-ms="1692" status="PASS">
+        </test-method> <!-- LoginToOC -->
+        <test-method is-config="true" signature="AfterMethodMethod(org.testng.ITestResult)[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d]" started-at="2023-10-05T22:56:37 IST" name="AfterMethodMethod" finished-at="2023-10-05T22:56:37 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MethodA status=SUCCESS method=TC_LoginFunctionality.MethodA()[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d] output={null}]]]>
+                <![CDATA[[TestResult name=LoginToOC status=SUCCESS method=TC_LoginFunctionality.LoginToOC()[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethodMethod -->
-        <test-method is-config="true" signature="AfterTestMethod()[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d]" started-at="2023-10-05T18:36:40 IST" name="AfterTestMethod" finished-at="2023-10-05T18:36:40 IST" duration-ms="525" status="PASS">
+        <test-method is-config="true" signature="AfterTestMethod()[pri:0, instance:testsOn_OC.TC_LoginFunctionality@10683d9d]" started-at="2023-10-05T22:56:37 IST" name="AfterTestMethod" finished-at="2023-10-05T22:56:37 IST" duration-ms="270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterTestMethod -->
       </class> <!-- testsOn_OC.TC_LoginFunctionality -->
-    </test> <!-- Test -->
+    </test> <!-- Test1 -->
+    <test started-at="2023-10-05T22:56:37 IST" name="Test2" finished-at="2023-10-05T22:56:44 IST" duration-ms="7012">
+      <class name="testsOn_OC.TC_RegistrationFunctionality">
+        <test-method is-config="true" signature="BeforeTestMethod()[pri:0, instance:testsOn_OC.TC_RegistrationFunctionality@b2c9a9c]" started-at="2023-10-05T22:56:37 IST" name="BeforeTestMethod" finished-at="2023-10-05T22:56:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTestMethod -->
+        <test-method is-config="true" signature="SetupBrowser(java.lang.String,java.lang.reflect.Method)[pri:0, instance:testsOn_OC.TC_RegistrationFunctionality@b2c9a9c]" started-at="2023-10-05T22:56:37 IST" name="SetupBrowser" finished-at="2023-10-05T22:56:42 IST" duration-ms="5215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void testsOn_OC.TC_RegistrationFunctionality.Registration()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupBrowser -->
+        <test-method signature="Registration()[pri:0, instance:testsOn_OC.TC_RegistrationFunctionality@b2c9a9c]" started-at="2023-10-05T22:56:42 IST" name="Registration" finished-at="2023-10-05T22:56:44 IST" duration-ms="1742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration -->
+        <test-method is-config="true" signature="AfterMethodMethod(org.testng.ITestResult)[pri:0, instance:testsOn_OC.TC_RegistrationFunctionality@b2c9a9c]" started-at="2023-10-05T22:56:44 IST" name="AfterMethodMethod" finished-at="2023-10-05T22:56:44 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Registration status=SUCCESS method=TC_RegistrationFunctionality.Registration()[pri:0, instance:testsOn_OC.TC_RegistrationFunctionality@b2c9a9c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethodMethod -->
+        <test-method is-config="true" signature="AfterTestMethod()[pri:0, instance:testsOn_OC.TC_RegistrationFunctionality@b2c9a9c]" started-at="2023-10-05T22:56:44 IST" name="AfterTestMethod" finished-at="2023-10-05T22:56:44 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestMethod -->
+      </class> <!-- testsOn_OC.TC_RegistrationFunctionality -->
+    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>

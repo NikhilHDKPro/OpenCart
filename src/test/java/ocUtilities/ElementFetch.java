@@ -11,15 +11,15 @@ public class ElementFetch {
 
 	public WebElement getWebElement(String identifierType, String identifierValue) {
 		switch(identifierType) {
-		case "XPATH":
+		case "xpath":
 			return Base.driver.findElement(By.xpath(identifierValue));
-		case "CSS":
+		case "css":
 			return Base.driver.findElement(By.cssSelector(identifierValue));
-		case "ID":
+		case "id":
 			return Base.driver.findElement(By.id(identifierValue));
-		case "NAME":
+		case "name":
 			return Base.driver.findElement(By.name(identifierValue));
-		case "TAGNAME":
+		case "tagname":
 			return Base.driver.findElement(By.tagName(identifierValue));
 		
 		default:
@@ -28,15 +28,15 @@ public class ElementFetch {
 	}
 	public List<WebElement> getWebElements(String identifierType, String identifierValue){
 		switch(identifierType) {
-		case "XPATH":
+		case "xpath":
 			return Base.driver.findElements(By.xpath(identifierValue));
-		case "CSS":
+		case "css":
 			return Base.driver.findElements(By.cssSelector(identifierValue));
-		case "ID":
+		case "id":
 			return Base.driver.findElements(By.id(identifierValue));
-		case "NAME":
+		case "name":
 			return Base.driver.findElements(By.name(identifierValue));
-		case "TAGNAME":
+		case "tagname":
 			return Base.driver.findElements(By.tagName(identifierValue));
 		
 		default:
