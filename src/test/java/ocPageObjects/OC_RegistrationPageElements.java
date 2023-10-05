@@ -14,5 +14,6 @@ public interface OC_RegistrationPageElements {
 	String RegPPrivaccyPolicy="//b[normalize-space()='Privacy Policy']";
 	String RegPPrivacyPolicyCheckBox="//input[@name='agree']";
 	String RegPContinueButton="//input[@value='Continue']";
+	String RegPCongratulationMessage="//p[contains(text(),'Congratulations! Your new account has been success')]";
 	
 }
