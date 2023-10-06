@@ -10,7 +10,7 @@ import ocBase.Base;
 public class ElementFetch {
 
 	public WebElement getWebElement(String identifierType, String identifierValue) {
-		switch(identifierType) {
+		switch (identifierType) {
 		case "xpath":
 			return Base.driver.findElement(By.xpath(identifierValue));
 		case "css":
@@ -21,13 +21,14 @@ public class ElementFetch {
 			return Base.driver.findElement(By.name(identifierValue));
 		case "tagname":
 			return Base.driver.findElement(By.tagName(identifierValue));
-		
+
 		default:
-		return null;
+			return null;
+		}
 	}
-	}
-	public List<WebElement> getWebElements(String identifierType, String identifierValue){
-		switch(identifierType) {
+
+	public List<WebElement> getWebElements(String identifierType, String identifierValue) {
+		switch (identifierType) {
 		case "xpath":
 			return Base.driver.findElements(By.xpath(identifierValue));
 		case "css":
@@ -38,9 +39,10 @@ public class ElementFetch {
 			return Base.driver.findElements(By.name(identifierValue));
 		case "tagname":
 			return Base.driver.findElements(By.tagName(identifierValue));
-		
+
 		default:
-		return null;
-		
+			return null;
+
 		}
-	}}
+	}
+}

@@ -15,25 +15,26 @@ import org.testng.annotations.ITestAnnotation;
 
 import ocBase.*;
 
-public class SuiteListener implements ITestListener, IAnnotationTransformer{
+public class SuiteListener implements ITestListener, IAnnotationTransformer {
 
 	public void onTestFailure(ITestResult result) {
-	    
-		String filename=System.getProperty("user.dir")+File.separator+"screenshots"+File.separator+result.getMethod().getMethodName();
-		File f=((TakesScreenshot)Base.driver).getScreenshotAs(OutputType.FILE);
-		
+
+		String filename = System.getProperty("user.dir") + File.separator + "screenshots" + File.separator
+				+ result.getMethod().getMethodName();
+		File f = ((TakesScreenshot) Base.driver).getScreenshotAs(OutputType.FILE);
+
 		try {
-			FileUtils.copyFile(f, new File(filename+".png"));
+			FileUtils.copyFile(f, new File(filename + ".png"));
 		} catch (IOException e) {
-			
+
 			e.printStackTrace();
 		}
-	  }
-	 public void transform(
-		      ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
+	}
 
-		 annotation.setRetryAnalyzer(RetryAnalyzer.class);
-		 
-		  }
-	
+	public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
+
+		annotation.setRetryAnalyzer(RetryAnalyzer.class);
+
+	}
+
 }

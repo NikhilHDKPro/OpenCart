@@ -5,8 +5,11 @@ import java.lang.reflect.Method;
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import com.aventstack.extentreports.ExtentReports;
@@ -36,6 +39,7 @@ public class Base {
 		extent.setSystemInfo("Environment", "SIT");
 		sparkReporter.config().setDocumentTitle("Automation Report");
 		sparkReporter.config().setReportName("Automation Test Result By Nikhil");
+
 	}
 
 	@BeforeMethod
@@ -43,8 +47,11 @@ public class Base {
 	public void SetupBrowser(String browser, Method testMethod) {
 		logger = extent.createTest(testMethod.getName());
 		setupDriver(browser);
+
 		driver.get(Constants.url);
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
 	}
 
 	@AfterMethod
@@ -74,12 +81,21 @@ public class Base {
 	public void setupDriver(String browser) {
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
+//			ChromeOptions options = new ChromeOptions();
+//			options.addArguments("--headless");
+//			driver = new ChromeDriver(options);
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
+//			FirefoxOptions options = new FirefoxOptions();
+//			options.addArguments("--headless");
+//			driver = new FirefoxDriver(options);
 			driver = new FirefoxDriver();
 		} else if (browser.equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
+//			EdgeOptions options = new EdgeOptions();
+//			options.addArguments("--headless");
+//			driver = new EdgeDriver(options);
 			driver = new EdgeDriver();
 		}
 	}

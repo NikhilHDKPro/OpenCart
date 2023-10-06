@@ -4,18 +4,19 @@
   <listeners>
     <listener class-name="ocUtilities.SuiteListener"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="browser" value="edge"/>
     <classes>
-      <class name="testsOn_OC.TC_RegistrationFunctionality">
+      <class name="testsOn_OC.TCase1">
         <methods>
           <include name="Registration"/>
-          <include name="AfterMethodMethod"/>
           <include name="SetupBrowser"/>
+          <include name="AfterMethodMethod"/>
           <include name="BeforeTestMethod"/>
           <include name="AfterTestMethod"/>
+          <include name="LoginToOC"/>
         </methods>
-      </class> <!-- testsOn_OC.TC_RegistrationFunctionality -->
+      </class> <!-- testsOn_OC.TCase1 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

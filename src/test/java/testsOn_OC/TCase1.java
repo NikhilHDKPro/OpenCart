@@ -16,6 +16,7 @@ public class TCase1 extends Base {
 
 	@Test
 	public void LoginToOC() {
+
 		hp.GotoLoginPage();
 		lp.varifyIfLoginPageIsLoaded();
 		lp.EnterCredentialsAndLogin();
@@ -25,5 +26,5 @@ public class TCase1 extends Base {
 	public void Registration() {
 		hp.GoToRegistrationPage();
 		rp.EnterRegistrationCredentials();
-		}
+	}
 }
